@@ -1,0 +1,77 @@
+<!-- 메인 컨텐츠 -->
+
+
+<div class="widewrapper">
+	<div class="container" role="main">
+		<div class="headline">
+			“HTML enhanced for web apps!“
+		</div>
+
+		<div class="row feature-box">
+			<div class="col-md-4 feature">
+				<div class="icon"><i class="glyphicons ok"><i></i></i></div>
+				<div class="text">
+					<h3>Why AngularJS?</h3>
+					<p>HTML is great for declaring static documents, but it falters when we try to use it for declaring dynamic views in web-applications. AngularJS lets you extend HTML vocabulary for your application. The resulting environment is extraordinarily expressive, readable, and quick to develop.</p>
+				</div>
+			</div>
+			<div class="col-md-4 feature">
+				<div class="icon"><i class="glyphicons leaf"><i></i></i></div>
+				<div class="text">
+					<h3>Alternatives</h3>
+					<p>Other frameworks deal with HTML’s shortcomings by either abstracting away HTML, CSS, and/or JavaScript or by providing an imperative way for manipulating the DOM. Neither of these address the root problem that HTML was not designed for dynamic views.</p>
+				</div>
+			</div>
+			<div class="col-md-4 feature">
+				<div class="icon"><i class="glyphicons charts"><i></i></i></div>
+				<div class="text">
+					<h3>Extensibility</h3>
+					<p>AngularJS is a toolset for building the framework most suited to your application development. It is fully extensible and works well with other libraries. Every feature can be modified or replaced to suit your unique development workflow and feature needs. Read on to find out how.</p>
+				</div>
+			</div>
+		</div>
+</div>  
+
+<div class="widewrapper strong-highlight">
+	<div class="container calltoaction">
+		<span>영업본부 기획개발2팀!!!</span>
+	</div>
+</div>
+
+<script data-controller>
+(function ($scope) {
+
+	//CSS 업데이트
+	$scope.$emit('updateCSS', [
+		'css/vendor/fractionslider/style.css',
+		'css/vendor/fractionslider/fractionslider.css'
+	]);
+
+	//로딩될 때까지 슬라이더 숨기기
+	$('.slider').hide();
+
+	//디펜던시
+	require([
+		'vendor/fractionslider/jquery.fractionslider.min'
+	], function () {
+
+		$(document).ready(function(){
+
+			//로드가 완료되면, 다시 보이고 슬라이더 시작
+			$('.slider').show().fractionSlider({
+				'fullWidth': true,
+				'controls': false, 
+				'pager':	false,
+				'responsive': true,
+				'dimensions': "1000,400",
+			    	'increase': false,
+				'pauseOnHover': false
+			});
+
+		});
+
+	});
+
+
+});
+</script data-controller>

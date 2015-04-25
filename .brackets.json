@@ -1,0 +1,6 @@
+{
+    "jscodehints.detectedExclusions": [
+        "D:/Dropbox/생활코딩/angluarJS/vendor/jquery.threedubmedia/jquery/qunit.js",
+        "D:/Dropbox/생활코딩/angluarJS/vendor/jquery.easy-pie-chart/src/angular.directive.js"
+    ]
+}

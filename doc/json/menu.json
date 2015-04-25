@@ -1,0 +1,13 @@
+{
+	"menuTree" : [
+		{"id": "home", "parentId": "root", "label": "Home", "sequence": 0, "template": "contents/home.html", "hash": "#!/home" },
+		{"id": "comcodereg", "parentId": "root", "label": "공통코드등록", "sequence": 1, "template": "contents/comcodereg/comcodereg.html" , "hash": "#!/comcodereg" },
+		{"id": "customereg", "parentId": "root", "label": "고객등록", "sequence": 2, "template": "contents/customereg/customereg.html" , "hash": "#!/customereg" },
+		{"id": "forecatingreg", "parentId": "root", "label": "포케스팅등록", "sequence": 3, "template": "contents/forecatingreg/forecatingreg.html" , "hash": "#!/forecatingreg" },
+		{"id": "contractreg", "parentId": "root", "label": "계약등록", "sequence": 4, "template": "contents/contractreg/contractreg.html" , "hash": "#!/contractreg" },
+        {"id": "accountreg", "parentId": "root", "label": "계산서 발행", "sequence": 5, "template": "contents/accountreg/accountreg.html" , "hash": "#!/accountreg" },
+        {"id": "workreg", "parentId": "root", "label": "업무등록", "sequence": 6, "template": "contents/workreg/workreg.html" , "hash": "#!/workreg" }
+        
+        
+	]
+}
